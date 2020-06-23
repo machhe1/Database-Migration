@@ -48,22 +48,15 @@ sudo service postgresql stop
 
 sudo nano /etc/postgresql/10/main/postgresql.conf
 # MODIFIED CONFIGURATIONS
-# data_directory = ‘/database’
+# data_directory = â€˜/databaseâ€™
 # shared_buffers = 16GB                 # 25% of 64GB mem available
 # max_worker_processes = 16             # 16 vCPUs on this machine
 # max_parallel_workers_per_gather = 16  # max
 # max_parallel_workers = 16
 # effective_cache_size = 48GB           # 75% of 64GB mem available
 # listen_addresses = '*'                # so other machines can talk to the DB
-# advice on configs:
-# https://www.postgresql.org/docs/9.5/runtime-config-query.html
-# https://dev.to/pythonmeister/basic-postgresql-tuning-parameters-281
-# https://www.2ndquadrant.com/en/blog/postgresql96-parallel-sequential-scan/
-# https://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server
 
-# authenticate Spark workers by specifying private IPs
-# with auth-method `trust`
-# https://www.postgresql.org/docs/10/auth-pg-hba-conf.html
+
 sudo nano /etc/postgresql/10/main/pg_hba.conf
 
 
