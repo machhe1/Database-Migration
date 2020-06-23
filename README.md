@@ -6,10 +6,10 @@ From the past few years, migration to cloud is exponentially increasing. So, it 
 USAspending Database as a [Complete PostgreSQL Dump Archive](https://files.usaspending.gov/database_download/) generated on a **monthly** basis.
 
 # Database Migration Strategy
-Obtain an existing database
-Migrate data to new S3 Data Lake
-Biuld API to access Data Lake
-Valide Queries to new S3 Data Lake return same result as Original Database
+  1. Obtain an existing database
+  2. Migrate data to new S3 Data Lake
+  3. Biuld API to access Data Lake
+  4. Valide Queries to new S3 Data Lake return same result as Original Database
 
 # Architecture
 
