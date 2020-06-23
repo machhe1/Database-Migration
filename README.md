@@ -4,3 +4,19 @@ From the past few years, migration to cloud is exponentially increasing. So, it 
 
 # Data
 USAspending Database as a [Complete PostgreSQL Dump Archive](https://files.usaspending.gov/database_download/) generated on a **monthly** basis.
+
+# Database Migration Strategy
+Obtain an existing database
+Migrate data to new S3 Data Lake
+Biuld API to access Data Lake
+Valide Queries to new S3 Data Lake return same result as Original Database
+
+# Architecture
+
+
+# Installation
+  1. Set up a PostgreSQL database and restore the full database (~700GB) from the archive file (~60GB).
+  2. Configure S3.
+  3. Migrate each table (~60 tables) from PostgreSQL to S3 Via Python.
+  4. Configure Athena pointing to S3.
+  5. Set up a web server with Apache and UI with Flask.
