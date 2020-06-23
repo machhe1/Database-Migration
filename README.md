@@ -12,7 +12,7 @@ USAspending Database as a [Complete PostgreSQL Dump Archive](https://files.usasp
   4. Valide Queries to new S3 Data Lake return same result as Original Database
 
 # Architecture
-!(https://github.com/machhe1/Database-Migration/master/PostgresToS3image.PNG?raw=true)
+![eh](https://github.com/machhe1/Database-Migration/master/PostgresToS3image.PNG)
 
 # Installation
   1. Set up a PostgreSQL database and restore the full database (~700GB) from the archive file (~60GB).
